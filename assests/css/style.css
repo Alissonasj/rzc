@@ -1,0 +1,18 @@
+@import url('cabecalho-header.css');
+
+:root {
+    --fonte-padrao: 'Open Sans', sans-serif;
+
+    --cabecalho-color: #15191C;
+    --cartao-color: #2C343A;
+    --pagina-color: #1D232A;    
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: var(--pagina-color);
+}
+
+.cartao {
+
+}
