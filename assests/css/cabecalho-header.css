@@ -5,3 +5,9 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.video-destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

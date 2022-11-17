@@ -1,18 +1,72 @@
 @import url('cabecalho-header.css');
+@import url('principal-main.css');
 
 :root {
     --fonte-padrao: 'Open Sans', sans-serif;
 
     --cabecalho-color: #15191C;
     --cartao-color: #2C343A;
-    --pagina-color: #1D232A;    
+    --pagina-color: #1D232A;
+    --texto-cinza-claro: #95999C;
+    --branco: #FFFFFF;   
 }
 
 body {
     font-family: var(--fonte-padrao);
     background-color: var(--pagina-color);
+    color: var(--branco);
 }
 
-.cartao {
 
+/* componente cartao */
+.cartao {
+    width: 328px;
+    background-color: var(--cartao-color);
+    border-radius: 16px;    
+}
+
+.cartao p,
+.cartao h4 {
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+.cartao__imagem {
+    width: 100%;
+}
+
+.cartao__texto {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.cartao__titulo {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.cartao__texto-autor,
+.cartao__texto-relogio,
+.cartao__texto-visualizacao {
+    color: var(--texto-cinza-claro);
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.cartao__container--flex {
+    display: flex;
+    margin-top: -1rem;
+}
+
+.cartao__texto-relogio::before {
+    content: url('../img/icones/relogio.png');
+}
+
+.cartao__texto-visualizacao::before {
+    content: url('../img/icones/visualizacao.png');
+}
+
+.cartao__texto--before::before {
+    vertical-align: middle;
+    margin-right: .5rem;
 }
