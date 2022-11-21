@@ -1,0 +1,78 @@
+/* componente cartao */
+.cartao {
+    width: 328px;
+    background-color: var(--cartao-color);
+    border-radius: 16px;    
+}
+
+.cartao p,
+.cartao h4 {
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+.cartao__imagem {
+    width: 100%;
+}
+
+.cartao__texto {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.cartao__titulo {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.cartao__container--legendas {
+    display: flex;
+    margin-top: -1rem;
+}
+
+.cartao__texto-autor,
+.cartao__texto--relogio,
+.cartao__texto--visualizacao {
+    color: var(--texto-cinza-claro);
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.cartao__texto--relogio::before,
+.cartao__texto--visualizacao::before {
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+
+.cartao__link--grande {
+    background-color: var(--link-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: .5rem 0;
+    margin: 0 1rem 1rem;
+    color: var(--branco);
+}
+
+.cartao__link--grande::before {     
+    margin-right: .5rem;   
+}
+
+
+/* cartão pequeno */
+.cartao__container--alternativo {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.cartao__link--pequeno {
+    background-color: var(--link-color);    
+    border-radius: 9px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+}

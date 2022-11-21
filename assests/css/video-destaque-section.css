@@ -1,0 +1,18 @@
+.cartao__link::before {
+    content: url('../img/icones/assistir-link.png');
+}
+
+.cartao__texto--relogio::before {
+    content: url('../img/icones/relogio.png');
+}
+
+.cartao__texto--visualizacao::before {
+    content: url('../img/icones/visualizacao.png');
+}
+
+.mais-vistos__titulo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 100%;
+    margin: 2rem 0 1rem 2.3rem;
+}
