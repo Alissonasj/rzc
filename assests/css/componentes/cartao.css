@@ -2,7 +2,7 @@
 .cartao {
     width: 328px;
     background-color: var(--cartao-color);
-    border-radius: 16px;    
+    border-radius: 16px;  
 }
 
 .cartao p,
@@ -32,14 +32,16 @@
 
 .cartao__texto-autor,
 .cartao__texto--relogio,
-.cartao__texto--visualizacao {
+.cartao__texto--visualizacao,
+.cartao__texto--dolar {
     color: var(--texto-cinza-claro);
     font-size: .9rem;
     font-weight: 400;
 }
 
 .cartao__texto--relogio::before,
-.cartao__texto--visualizacao::before {
+.cartao__texto--visualizacao::before,
+.cartao__texto--dolar::before {
     vertical-align: middle;
     margin-right: .5rem;
 }

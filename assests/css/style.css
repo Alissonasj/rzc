@@ -1,6 +1,7 @@
 @import url('cabecalho-header.css');
 @import url('principal-main.css');
 @import url('video-destaque-section.css');
+@import url('loja-section.css');
 @import url('componentes/cartao.css');
 
 :root {

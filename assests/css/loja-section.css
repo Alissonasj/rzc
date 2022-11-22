@@ -1,0 +1,21 @@
+.cartao__texto--dolar::before {
+    content: url('../img/icones/dinheiro.png');
+}
+
+.comprar::before {
+    content: url('/assests/img/icones/carrinho.png');
+}
+
+.loja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loja__cartao {
+    margin-bottom: 1rem;
+}
+
+.camisa-recente__item {
+    margin-bottom: 1rem;
+}
