@@ -15,11 +15,40 @@
 
 <body>
     <header class="cabecalho">
-        <div class="container">
-            <img src="assests/img/icones/menu-hamburger.png" alt="">
+        <input type="checkbox" class="checkbox" id="menu">
+        <div class="container">            
+            <label for="menu" class="checkbox__label">
+                <img src="assests/img/icones/menu-hamburger.png" alt="">
+            </label>
             <img src="assests/img/logo.png" alt="">
             <img src="assests/img/icones/sino.png" alt="">
         </div>
+
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item--logo">
+                    <img src="assests/img/logo.png" alt="">
+                </li>
+                <li class="menu__item menu__item--ativo">
+                    <a href="#" class="menu__link menu__link--inicio menu__link--ativo">Início</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link menu__link--videos">Vídeos</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link menu__link--picos">Picos</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link menu__link--integrantes">Integrantes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link menu__link--camisas">Camisas</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link menu__link--pinturas">Pinturas</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main class="principal">

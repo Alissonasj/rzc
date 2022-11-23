@@ -1,7 +1,82 @@
+.cabecalho {
+    position: relative;
+}
+
 .cabecalho .container {
     background-color: var(--cabecalho-color);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked ~ .menu {
+    display: block;
+}
+
+.menu__lista {
+    background-color: var(--cabecalho-color);
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: absolute;
+}
+
+.menu__item {
+    padding: 2rem 0 2rem 1.5rem;
+}
+
+.menu__item--ativo {
+    border-left: 8px solid white;
+}
+
+.menu__item--logo {
+    align-self: center;
+}
+
+.menu__link {
+    color: var(--texto-cinza-claro);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.menu__link::before {
+    margin-right: 1rem;
+}
+
+.menu__link--inicio::before {
+    content: url('/assests/img/icones/inicio.png');        
+}
+
+.menu__link--videos::before {
+    content: url('/assests/img/icones/videos.png');        
+}
+
+.menu__link--picos::before {
+    content: url('/assests/img/icones/picos.png');        
+}
+
+.menu__link--integrantes::before {
+    content: url('/assests/img/icones/integrantes.png');        
+}
+
+.menu__link--camisas::before {
+    content: url('/assests/img/icones/camisas.png');        
+}
+
+.menu__link--pinturas::before {
+    content: url('/assests/img/icones/pinturas.png');        
+}
+
+.menu__link--ativo {
+    color: var(--branco);
+    font-weight: 700;    
 }
