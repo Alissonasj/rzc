@@ -19,3 +19,61 @@
 .camisa-recente__item {
     margin-bottom: 1rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .loja {
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+        gap: 2rem;
+        align-items: start;
+    }
+    
+    .loja__cartao {
+        grid-column: 2;
+    }
+
+    .camisa-recente__titulo {
+        grid-column: 1 / 3;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .novas-artes__lista {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .camisa-recente__lista {
+        grid-column: 1 / 3;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .novas-artes__lista {
+        background-color: var(--cartao-color);                
+        padding: 2rem;
+        border-radius: 16px;
+    }
+
+    .novas-artes__item {
+        display: flex;
+        margin-bottom: 1rem;  
+    }
+
+    .novas-artes__item--space-between {
+        justify-content: space-between;
+    }
+
+    .novas-artes__item img {
+        margin-right: 1rem;
+    }
+
+    .novas-artes__item div > h4 {
+        font-weight: 700;
+    }
+
+    .novas-artes__item div > p {
+        color: var(--texto-cinza-claro);
+        font-size: .9rem;
+    }
+}

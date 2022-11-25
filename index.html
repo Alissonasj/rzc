@@ -14,160 +14,264 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <input type="checkbox" class="checkbox" id="menu">
-        <div class="container">            
-            <label for="menu" class="checkbox__label">
-                <img src="assests/img/icones/menu-hamburger.png" alt="">
-            </label>
-            <img src="assests/img/logo.png" alt="">
-            <img src="assests/img/icones/sino.png" alt="">
-        </div>
-
-        <nav class="menu">
-            <ul class="menu__lista">
-                <li class="menu__item--logo">
-                    <img src="assests/img/logo.png" alt="">
-                </li>
-                <li class="menu__item menu__item--ativo">
-                    <a href="#" class="menu__link menu__link--inicio menu__link--ativo">Início</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link--videos">Vídeos</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link--picos">Picos</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link--integrantes">Integrantes</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link--camisas">Camisas</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link menu__link--pinturas">Pinturas</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="principal">
-        <h3 class="principal__titulo">Início</h3>
-
-        <section class="video-destaque">
-            <div class="video-destaque__cartao cartao">
-                <img src="assests/img/card_video-destaque.png" alt="" class="cartao__imagem">
-                <p class="cartao__texto">Vídeo em destaque</p>
-                <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
-                <p class="cartao__texto-autor">Bruno Lopes</p>
-                <div class="cartao__container--legendas">
-                    <p class="cartao__texto--relogio">33 minutos</p>
-                    <p class="cartao__texto--visualizacao">53 visualizações</p>
-                </div>
-                <a href="#" class="cartao__link cartao__link--grande assistir">Assistir agora</a>
+    <div class="grid-container">
+        <header class="cabecalho">
+            <input type="checkbox" class="checkbox" id="menu">
+            <div class="container">
+                <label for="menu" class="checkbox__label">
+                    <img src="assests/img/icones/menu-hamburger.png" class="menu-hamburger" alt="">
+                </label>
+                <img src="assests/img/logo.png" class="logo" alt="">
+                <span class="perfil">
+                    <img src="assests/img/perfil.png" alt="" class="">
+                    Bruno Lopes
+                </span>
+                <img src="assests/img/icones/sino.png" class="sino" alt="">
             </div>
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item--logo">
+                        <img src="assests/img/logo.png" alt="">
+                    </li>
+                    <li class="menu__item menu__item--ativo">
+                        <a href="#" class="menu__link menu__link--inicio menu__link--ativo">Início</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--videos">Vídeos</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--picos">Picos</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--integrantes">Integrantes</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--camisas">Camisas</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--pinturas">Pinturas</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-            <h3 class="mais-vistos__titulo">Vídeos mais vistos</h3>
-
-            <ul class="mais-vistos__lista">
-                <li class="mais-vistos__item cartao">
-                    <img src="assests/img/card-1_videos-mais-vistos.png" alt="" class="cartao__imagem">
-                    <p class="cartao__texto-autor">Bruno Lopes</p>
+        <main class="principal">
+            <h3 class="principal__titulo">Início</h3>
+            <section class="video-destaque">
+                <div class="video-destaque__cartao cartao">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="assests/img/arte.png" type="image/png">
+                        <img src="assests/img/card_video-destaque.png" alt="" class="cartao__imagem">
+                    </picture>
+                    <p class="cartao__texto">Vídeo em destaque</p>
                     <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
-                    <div class="cartao__container--alternativo">
-                        <p class="cartao__texto--relogio">33 minutos</p>
-                        <a href="#" class="cartao__link cartao__link--pequeno assistir"></a>
-                    </div>
-                </li>
-
-                <li class="mais-vistos__item cartao">
-                    <img src="assests/img/card-2_videos-mais-vistos.png" alt="" class="cartao__imagem">
                     <p class="cartao__texto-autor">Bruno Lopes</p>
-                    <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
-                    <div class="cartao__container--alternativo">
+                    <div class="cartao__container--legendas">
                         <p class="cartao__texto--relogio">33 minutos</p>
-                        <a href="#" class="cartao__link cartao__link--pequeno assistir"></a>
+                        <p class="cartao__texto--visualizacao">53 visualizações</p>
                     </div>
-                </li>
-
-                <li class="mais-vistos__item cartao">
-                    <img src="assests/img/card-3_videos-mais-vistos.png" alt="" class="cartao__imagem">
-                    <p class="cartao__texto-autor">Bruno Lopes</p>
-                    <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
-                    <div class="cartao__container--alternativo">
-                        <p class="cartao__texto--relogio">33 minutos</p>
-                        <a href="#" class="cartao__link cartao__link--pequeno assistir"></a>
-                    </div>
-                </li>
-
-                <li class="mais-vistos__item cartao">
-                    <img src="assests/img/card-4_videos-mais-vistos.png" alt="" class="cartao__imagem">
-                    <p class="cartao__texto-autor">Bruno Lopes</p>
-                    <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
-                    <div class="cartao__container--alternativo">
-                        <p class="cartao__texto--relogio">33 minutos</p>
-                        <a href="#" class="cartao__link cartao__link--pequeno assistir"></a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section class="loja">
-            <div class="loja__cartao cartao">
-                <img src="assests/img/card_camisa-destaque.png" alt="" class="cartao__imagem">
-                <p class="cartao__texto">Nova arte</p>
-                <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
-                <p class="cartao__texto-autor">Bruno Lopes</p>
-                <div class="cartao__container--legendas">
-                    <p class="cartao__texto--dolar">33,33</p>
-                    <p class="cartao__texto--visualizacao">53 visualizações</p>
+                    <a href="#" class="cartao__link cartao__link--grande assistir">Assistir agora</a>
                 </div>
-                <a href="#" class="cartao__link cartao__link--grande comprar">Comprar agora</a>
-            </div>
 
-            <ul class="camisa-recente__lista">
-                <li class="camisa-recente__item cartao">
-                    <img src="assests/img/card-1_camisas-recentes.png" alt="" class="cartao__imagem">
-                    <p class="cartao__texto-autor">Bruno Lopes</p>
-                    <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
-                    <div class="cartao__container--alternativo">
-                        <p class="cartao__texto--dolar">33,33</p>
-                        <a href="#" class="cartao__link cartao__link--pequeno comprar"></a>
-                    </div>
-                </li> 
-                
-                <li class="camisa-recente__item cartao">
-                    <img src="assests/img/card-2_camisas-recentes.png" alt="" class="cartao__imagem">
-                    <p class="cartao__texto-autor">Bruno Lopes</p>
-                    <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
-                    <div class="cartao__container--alternativo">
-                        <p class="cartao__texto--dolar">33,33</p>
-                        <a href="#" class="cartao__link cartao__link--pequeno comprar"></a>
-                    </div>
-                </li> 
+                <h3 class="mais-vistos__titulo">Vídeos mais vistos</h3>
 
-                <li class="camisa-recente__item cartao">
-                    <img src="assests/img/card-3_camisas-recentes.png" alt="" class="cartao__imagem">
-                    <p class="cartao__texto-autor">Bruno Lopes</p>
-                    <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
-                    <div class="cartao__container--alternativo">
-                        <p class="cartao__texto--dolar">33,33</p>
-                        <a href="#" class="cartao__link cartao__link--pequeno comprar"></a>
-                    </div>
-                </li> 
+                <ul class="mais-vistos__lista">
+                    <li class="mais-vistos__item cartao">
+                        <img src="assests/img/card-1_videos-mais-vistos.png" alt="" class="cartao__imagem">
+                        <p class="cartao__texto-autor">Bruno Lopes</p>
+                        <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
+                        <div class="cartao__container--alternativo">
+                            <p class="cartao__texto--relogio">33 minutos</p>
+                            <a href="#" class="cartao__link cartao__link--pequeno assistir"></a>
+                        </div>
+                    </li>
+                    <li class="mais-vistos__item cartao">
+                        <img src="assests/img/card-2_videos-mais-vistos.png" alt="" class="cartao__imagem">
+                        <p class="cartao__texto-autor">Bruno Lopes</p>
+                        <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
+                        <div class="cartao__container--alternativo">
+                            <p class="cartao__texto--relogio">33 minutos</p>
+                            <a href="#" class="cartao__link cartao__link--pequeno assistir"></a>
+                        </div>
+                    </li>
+                    <li class="mais-vistos__item cartao">
+                        <img src="assests/img/card-3_videos-mais-vistos.png" alt="" class="cartao__imagem">
+                        <p class="cartao__texto-autor">Bruno Lopes</p>
+                        <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
+                        <div class="cartao__container--alternativo">
+                            <p class="cartao__texto--relogio">33 minutos</p>
+                            <a href="#" class="cartao__link cartao__link--pequeno assistir"></a>
+                        </div>
+                    </li>
+                    <li class="mais-vistos__item cartao">
+                        <img src="assests/img/card-4_videos-mais-vistos.png" alt="" class="cartao__imagem">
+                        <p class="cartao__texto-autor">Bruno Lopes</p>
+                        <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
+                        <div class="cartao__container--alternativo">
+                            <p class="cartao__texto--relogio">33 minutos</p>
+                            <a href="#" class="cartao__link cartao__link--pequeno assistir"></a>
+                        </div>
+                    </li>
+                </ul>
 
-                <li class="camisa-recente__item cartao">
-                    <img src="assests/img/card-4_camisas-recentes.png" alt="" class="cartao__imagem">
-                    <p class="cartao__texto-autor">Bruno Lopes</p>
+                <ul class="videos-recentes__lista">
+                    <li class="videos-recentes__item videos-recentes__item--space-between">   
+                        <h4>Vídeos recetentes</h4>
+                        <a href="#">Ver todos</a>
+                    </li>
+                    <li class="videos-recentes__item">
+                        <img src="assests/img/v1.png" alt="">
+                        <div>
+                            <h4>HZ</h4>
+                            <p>Julia</p>
+                        </div>
+                    </li>
+                    <li class="videos-recentes__item">
+                        <img src="assests/img/v2.png" alt="">
+                        <div>
+                            <h4>HZ</h4>
+                            <p>Julia</p>
+                        </div>
+                    </li>
+                    <li class="videos-recentes__item">
+                        <img src="/assests/img/v3.png" alt="">
+                        <div>
+                            <h4>HZ</h4>
+                            <p>Julia</p>
+                        </div>
+                    </li>
+                    <li class="videos-recentes__item">
+                        <img src="assests/img/v4.png" alt="">
+                        <div>
+                            <h4>HZ</h4>
+                            <p>Julia</p>
+                        </div>
+                    </li>
+                    <li class="videos-recentes__item">
+                        <img src="assests/img/v5.png" alt="">
+                        <div>
+                            <h4>HZ</h4>
+                            <p>Julia</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="loja">
+                <div class="loja__cartao cartao">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="assests/img/arte2.png" type="image/png">
+                        <img src="assests/img/card_camisa-destaque.png" alt="" class="cartao__imagem">
+                    </picture>
+                    <p class="cartao__texto">Nova arte</p>
                     <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
-                    <div class="cartao__container--alternativo">
+                    <p class="cartao__texto-autor">Bruno Lopes</p>
+                    <div class="cartao__container--legendas">
                         <p class="cartao__texto--dolar">33,33</p>
-                        <a href="#" class="cartao__link cartao__link--pequeno comprar"></a>
+                        <p class="cartao__texto--visualizacao">53 visualizações</p>
                     </div>
-                </li> 
-            </ul>
-        </section>
-    </main>
+                    <a href="#" class="cartao__link cartao__link--grande comprar">Comprar agora</a>
+                </div>
+
+                <h3 class="camisa-recente__titulo">Camisas mais recentes</h3>
+
+                <ul class="camisa-recente__lista">
+                    <li class="camisa-recente__item cartao">
+                        <img src="assests/img/card-1_camisas-recentes.png" alt="" class="cartao__imagem">
+                        <p class="cartao__texto-autor">Bruno Lopes</p>
+                        <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
+                        <div class="cartao__container--alternativo">
+                            <p class="cartao__texto--dolar">33,33</p>
+                            <a href="#" class="cartao__link cartao__link--pequeno comprar"></a>
+                        </div>
+                    </li>
+                    <li class="camisa-recente__item cartao">
+                        <img src="assests/img/card-2_camisas-recentes.png" alt="" class="cartao__imagem">
+                        <p class="cartao__texto-autor">Bruno Lopes</p>
+                        <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
+                        <div class="cartao__container--alternativo">
+                            <p class="cartao__texto--dolar">33,33</p>
+                            <a href="#" class="cartao__link cartao__link--pequeno comprar"></a>
+                        </div>
+                    </li>
+                    <li class="camisa-recente__item cartao">
+                        <img src="assests/img/card-3_camisas-recentes.png" alt="" class="cartao__imagem">
+                        <p class="cartao__texto-autor">Bruno Lopes</p>
+                        <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
+                        <div class="cartao__container--alternativo">
+                            <p class="cartao__texto--dolar">33,33</p>
+                            <a href="#" class="cartao__link cartao__link--pequeno comprar"></a>
+                        </div>
+                    </li>
+                    <li class="camisa-recente__item cartao">
+                        <img src="assests/img/card-4_camisas-recentes.png" alt="" class="cartao__imagem">
+                        <p class="cartao__texto-autor">Bruno Lopes</p>
+                        <h4 class="cartao__titulo">HZC - Life is.../ 2021</h4>
+                        <div class="cartao__container--alternativo">
+                            <p class="cartao__texto--dolar">33,33</p>
+                            <a href="#" class="cartao__link cartao__link--pequeno comprar"></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="novas-artes__lista">
+                    <li class="novas-artes__item novas-artes__item--space-between">
+                        <h4>Novas artes</h4>
+                        <a href="#">Ver tudo</a>
+                    </li>
+                    <li class="novas-artes__item">
+                        <img src="assests/img/a1.png" alt="">
+                        <div>
+                            <h4>Titulo</h4>
+                            <p>Textos</p>
+                        </div>
+                    </li>
+                    <li class="novas-artes__item">
+                        <img src="assests/img/a2.png" alt="">
+                        <div>
+                            <h4>Titulo</h4>
+                            <p>Textos</p>
+                        </div>
+                    </li>
+                    <li class="novas-artes__item">
+                        <img src="assests/img/a3.png" alt="">
+                        <div>
+                            <h4>Titulo</h4>
+                            <p>Textos</p>
+                        </div>
+                    </li>
+                    <li class="novas-artes__item">
+                        <img src="assests/img/a4.png" alt="">
+                        <div>
+                            <h4>Titulo</h4>
+                            <p>Textos</p>
+                        </div>
+                    </li>
+                    <li class="novas-artes__item">
+                        <img src="assests/img/a5.png" alt="">
+                        <div>
+                            <h4>Titulo</h4>
+                            <p>Textos</p>
+                        </div>
+                    </li>
+                    <li class="novas-artes__item">
+                        <img src="assests/img/a6.png" alt="">
+                        <div>
+                            <h4>Titulo</h4>
+                            <p>Textos</p>
+                        </div>
+                    </li>
+                    <li class="novas-artes__item">
+                        <img src="assests/img/a7.png" alt="">
+                        <div>
+                            <h4>Titulo</h4>
+                            <p>Textos</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>

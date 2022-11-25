@@ -3,6 +3,7 @@
 @import url('video-destaque-section.css');
 @import url('loja-section.css');
 @import url('componentes/cartao.css');
+@import url('grid-container.css');
 
 :root {
     --fonte-padrao: 'Open Sans', sans-serif;
